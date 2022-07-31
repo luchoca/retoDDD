@@ -1,0 +1,17 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˇﬁèÂ
+L
+java:S2696("6Make the enclosing method "static" or remove this set.(æ‚°Ì
+K
+java:S2209("5Change this instance-reference to a static reference.(æ‚°Ì
+L
+java:S2696)"6Make the enclosing method "static" or remove this set.(¥∫¡Í
+K
+java:S2209)"5Change this instance-reference to a static reference.(¥∫¡Í
+L
+java:S2696."6Make the enclosing method "static" or remove this set.(Æ≠‹Ÿ
+K
+java:S2209."5Change this instance-reference to a static reference.(Æ≠‹Ÿ
+]	java:S1254"<This block of commented-out lines of code should be removed.(üÚìπ¸ˇˇˇˇ8åØ¶ï•0
+c	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü£íÄ
+V	java:S125Q"<This block of commented-out lines of code should be removed.(√™‡á¯ˇˇˇˇ

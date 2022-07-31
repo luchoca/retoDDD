@@ -1,12 +1,12 @@
 package UseCase.AggregatePista;
 
-import AgreggatePista.CommandsPista.AddSurtidor;
+import AgreggatePista.CommandsPista.AddVehiculo;
 import AgreggatePista.EventsDomainPista.PistaCreated;
-import AgreggatePista.EventsDomainPista.SurtidorAdded;
+import AgreggatePista.EventsDomainPista.VehiculoAdded;
 import AgreggatePista.ValueObjetPista.Nombre;
-import AgreggatePista.ValueObjetPista.Numero;
 import AgreggatePista.ValueObjetPista.PistaID;
-import AgreggatePista.ValueObjetPista.SurtidorID;
+import AgreggatePista.ValueObjetPista.TipoVehiculo;
+import AgreggatePista.ValueObjetPista.VehiculoID;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
@@ -26,20 +26,20 @@ import static org.mockito.Mockito.when;
 
 
 @ExtendWith(MockitoExtension.class)
-class AddSurtidorUseCaseTest {
+class AddVehiculoUseCaseTest {
 
     @InjectMocks
-    private AddSurtidorUseCase useCase;
+    private AddVehiculoUseCase useCase;
 
     @Mock
     private DomainEventRepository repository;
 
     @Test
-    void addSurtidorToPistaSuccessfully() {
+    void addVehiculoToPistaSuccessfully() {
         PistaID pistaID = PistaID.of("fakePistaID");
-        Numero numero = new Numero(7);
-        SurtidorID surtidorID = SurtidorID.of("fakeSurtidorID");
-        var command = new AddSurtidor(numero, surtidorID,pistaID);
+        TipoVehiculo tipoVehiculo = new TipoVehiculo("camioneta");
+        VehiculoID vehiculoID = VehiculoID.of("fakeSurtidorID");
+        var command = new AddVehiculo(pistaID, vehiculoID, tipoVehiculo);
 
         when(repository.getEventsBy("fakePistaID")).thenReturn(history());
         useCase.addRepository(repository);
@@ -49,9 +49,9 @@ class AddSurtidorUseCaseTest {
                 .syncExecutor(useCase, new RequestCommand<>(command))
                 .orElseThrow()
                 .getDomainEvents();
-        var event = (SurtidorAdded) events.get(0);
-        assertEquals(7, event.getNumero().value());
-        assertEquals("fakeSurtidorID", event.getSurtidorID().value());
+        var event = (VehiculoAdded) events.get(0);
+        assertEquals("camioneta", event.getTipoVehiculo().value());
+        assertEquals("fakeSurtidorID", event.getVehiculoID().value());
         Mockito.verify(repository).getEventsBy("fakePistaID");
     }
 

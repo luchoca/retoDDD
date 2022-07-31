@@ -10,10 +10,8 @@ public class AddPisteroUseCase extends UseCase<RequestCommand<AddPistero>, Respo
     @Override
     public void executeUseCase(RequestCommand<AddPistero> addPisteroRequestCommand) {
         var command = addPisteroRequestCommand.getCommand();
-        var pista = Pista.from(command.getPistaID(), repository().getEventsBy(command.getPistaID().value())
-        );
+        var pista = Pista.from(command.getPistaID(), repository().getEventsBy(command.getPistaID().value()));
         pista.addPistero(command.getPisteroID(), command.getNombre());
-
         emit().onResponse(new ResponseEvents(pista.getUncommittedChanges()));
     }
 }

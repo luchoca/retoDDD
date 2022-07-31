@@ -1,0 +1,33 @@
+
+l
+java:S1104
+"VMake vehiculoID a static final constant or non-public and provide accessors if needed.(†İÊ‰
+s
+java:S1104"XMake tipoVehiculo a static final constant or non-public and provide accessors if needed.(ıùèßøÿÿÿÿ
+F
+java:S1444
+"0Make this "public static vehiculoID" field final(†İÊ‰
+M
+java:S1444"2Make this "public static tipoVehiculo" field final(ıùèßøÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒâ¾øÿÿÿÿ
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÓÓµá
+B
+java:S3010"'Remove this assignment of "vehiculoID".(Ş¤áøÿÿÿÿ
+?
+java:S3010")Remove this assignment of "tipoVehiculo".(¹Æ ¤
+P
+java:S2209"5Change this instance-reference to a static reference.(Ş¤áøÿÿÿÿ
+K
+java:S2209"5Change this instance-reference to a static reference.(¹Æ ¤
+K
+java:S1172"5Remove this unused method parameter "vehiculoChange".(ÓÓµá
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¼Òúûÿÿÿÿ
+L
+java:S2696"6Make the enclosing method "static" or remove this set.(®­ÜÙ
+K
+java:S2209"5Change this instance-reference to a static reference.(®­ÜÙ
+L
+java:S2696"6Make the enclosing method "static" or remove this set.(Ü‚–§
+K
+java:S2209"5Change this instance-reference to a static reference.(Ü‚–§
