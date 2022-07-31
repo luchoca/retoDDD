@@ -10,9 +10,7 @@ public class CreatePistaUseCase extends UseCase<RequestCommand<CreatePista>, Res
     @Override
     public void executeUseCase(RequestCommand<CreatePista> createPistaRequestCommand) {
         var command = createPistaRequestCommand.getCommand();
-
         var pista = new Pista(command.getPistaID(), command.getNombre());
-
         emit().onResponse(new ResponseEvents(pista.getUncommittedChanges()));
     }
 

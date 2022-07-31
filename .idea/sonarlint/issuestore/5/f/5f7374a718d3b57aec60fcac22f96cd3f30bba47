@@ -1,0 +1,10 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Öø–ûÿÿÿÿ
+G
+java:S5869"*Remove duplicates in this character class.(Õ¡Åö8†à§¥0
+G
+java:S5869"*Remove duplicates in this character class.(Õ¡Åö8†à§¥0
+Z
+java:S1854"8Remove this useless assignment to local variable "that".(â˜ı…ÿÿÿÿÿ8­ˆ§¥0
+K
+java:S1481")Remove this unused "that" local variable.(â˜ı…ÿÿÿÿÿ8“à§¥0

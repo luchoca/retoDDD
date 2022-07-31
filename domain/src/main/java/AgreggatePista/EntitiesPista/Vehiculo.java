@@ -33,4 +33,7 @@ public class Vehiculo extends Entity<VehiculoID> {
     public static TipoVehiculo getTipoVehiculo() {
         return tipoVehiculo;
     }
+
+    public void updateVehiculoisAtendido(isAtendido isAtendido) {
+    }
 }

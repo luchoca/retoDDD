@@ -1,17 +1,53 @@
 
+m	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š»ì…8İéÄ±¥0
+m	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğö †8æï²¥0
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿŞå
 L
-java:S2696("6Make the enclosing method "static" or remove this set.(¾â¡í
+java:S2696!"6Make the enclosing method "static" or remove this set.(¾â¡í
 K
-java:S2209("5Change this instance-reference to a static reference.(¾â¡í
+java:S2209!"5Change this instance-reference to a static reference.(¾â¡í
 L
-java:S2696)"6Make the enclosing method "static" or remove this set.(´ºÁê
+java:S2696""6Make the enclosing method "static" or remove this set.(´ºÁê
 K
-java:S2209)"5Change this instance-reference to a static reference.(´ºÁê
+java:S2209""5Change this instance-reference to a static reference.(´ºÁê
 L
-java:S2696."6Make the enclosing method "static" or remove this set.(®­ÜÙ
+java:S2696&"6Make the enclosing method "static" or remove this set.(®­ÜÙ
 K
-java:S2209."5Change this instance-reference to a static reference.(®­ÜÙ
-]	java:S1254"<This block of commented-out lines of code should be removed.(Ÿò“¹üÿÿÿÿ8Œ¯¦•¥0
-c	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†£’€
-V	java:S125Q"<This block of commented-out lines of code should be removed.(Ãªà‡øÿÿÿÿ
+java:S2209&"5Change this instance-reference to a static reference.(®­ÜÙ
+Q
+java:S2696+"6Make the enclosing method "static" or remove this set.(«ë£éûÿÿÿÿ
+P
+java:S2209+"5Change this instance-reference to a static reference.(«ë£éûÿÿÿÿ
+c	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†£’€
+L
+java:S26962"6Make the enclosing method "static" or remove this set.(®­ÜÙ
+K
+java:S22092"5Change this instance-reference to a static reference.(®­ÜÙ
+Q
+java:S26966"6Make the enclosing method "static" or remove this set.(«ë£éûÿÿÿÿ
+P
+java:S22096"5Change this instance-reference to a static reference.(«ë£éûÿÿÿÿ
+Q
+java:S2696:"6Make the enclosing method "static" or remove this set.(«ë£éûÿÿÿÿ
+P
+java:S2209:"5Change this instance-reference to a static reference.(«ë£éûÿÿÿÿ
+L
+java:S2696>"6Make the enclosing method "static" or remove this set.(¾â¡í
+K
+java:S2209>"5Change this instance-reference to a static reference.(¾â¡í
+X
+java:S2696B"6Make the enclosing method "static" or remove this set.(ïÉı€ÿÿÿÿÿ8ÅÆ†³¥0
+W
+java:S2209B"5Change this instance-reference to a static reference.(ïÉı€ÿÿÿÿÿ8¬½±¥0
+X
+java:S2696F"6Make the enclosing method "static" or remove this set.(ï–‡úÿÿÿÿ8¬½±¥0
+W
+java:S2209F"5Change this instance-reference to a static reference.(ï–‡úÿÿÿÿ8®½±¥0
+X
+java:S2696J"6Make the enclosing method "static" or remove this set.(«ë£éûÿÿÿÿ8®½±¥0
+W
+java:S2209J"5Change this instance-reference to a static reference.(«ë£éûÿÿÿÿ8É‰À±¥0
+S
+java:S2696N"6Make the enclosing method "static" or remove this set.(®­ÜÙ8İŒ‹³¥0
+R
+java:S2209N"5Change this instance-reference to a static reference.(®­ÜÙ8İŒ‹³¥0
