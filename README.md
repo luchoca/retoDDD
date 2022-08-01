@@ -6,6 +6,9 @@ Reto final Domain Driven Design - Gasolinera
 Reto DDD sobre una estacion de servicio (gasolinera) donde cuenta con 3 subdominios en el cual se trabaja en el core Domain de cada subdominio, los cuales son la Pista (parte exteriror) , el mostrador (seria la parte de la caja) y la oficina (donde estan los administrativos)
 En este caso nos centramos 100% en el core de la Pista ya que se obtuvieron mas de 12 objetos de valor con sus respectivos comandos , eventos y sus casos de uso y test.
 
+
+VIDEO EXPLICATIVO https://www.youtube.com/watch?v=xhpWUfHe9og
+
 IMAGENES del Modelado !
 
 
