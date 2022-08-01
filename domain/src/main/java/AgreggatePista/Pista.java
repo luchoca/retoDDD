@@ -34,6 +34,8 @@ public class Pista extends AggregateEvent<PistaID> {
         this.nombre = Objects.requireNonNull(nombre);
         appendChange(new PisteroAdded(nombre)).apply();
     }
+
+
     public void addVehiculo(VehiculoID vehiculoID, TipoVehiculo tipoVehiculo) {
         this.vehiculoID = Objects.requireNonNull(vehiculoID);
         appendChange(new VehiculoAdded(vehiculoID, tipoVehiculo)).apply();
@@ -54,11 +56,11 @@ public class Pista extends AggregateEvent<PistaID> {
         this.surtidorID = Objects.requireNonNull(surtidorID);
         appendChange(new SurtidorisLibreUpdated(surtidorID,IsLibre)).apply();
     }
-    public void updateNumeroSurtidor(SurtidorID surtidorID, Numero numero) {
+    public void updateNumeroSurtidor(SurtidorID surtidorID, Numero numero, PistaID pistaID) {
         this.surtidorID = Objects.requireNonNull(surtidorID);
         appendChange(new NumeroSurtidorUpdated(surtidorID, numero)).apply();
     }
-    public void updateNombrePistero(PisteroID pisteroID, Nombre nombre) {
+    public void updateNombrePistero(PisteroID pisteroID, Nombre nombre, PistaID pistaID) {
         this.pisteroID = Objects.requireNonNull(pisteroID);
         appendChange(new NombrePisteroUpdated(pisteroID,nombre)).apply();
     }
@@ -66,15 +68,15 @@ public class Pista extends AggregateEvent<PistaID> {
         this.pistaID = Objects.requireNonNull(pistaID);
         appendChange(new PistaRemoved(pistaID, nombre)).apply();
     }
-    public void removePistero() {
-        this.pisteroID = Objects.requireNonNull(pisteroID());
-        appendChange(new PisteroRemoved(pisteroID, nombre)).apply();
+    public void removePistero(PisteroID pisteroID, Nombre nombre, PistaID pistaID) {
+        this.pisteroID = Objects.requireNonNull(pisteroID);
+        appendChange(new PisteroRemoved(pisteroID,nombre)).apply();
     }
-    public void removeSurtidor(SurtidorID surtidorID, Numero numero) {
+    public void removeSurtidor(SurtidorID surtidorID, Numero numero, PistaID pistaID) {
         this.surtidorID = Objects.requireNonNull(surtidorID);
         appendChange(new SurtidorRemoved(surtidorID, numero)).apply();
     }
-    public void removeVehiculo(VehiculoID vehiculoID, TipoVehiculo tipoVehiculo) {
+    public void removeVehiculo(VehiculoID vehiculoID, TipoVehiculo tipoVehiculo, PistaID pistaID) {
         this.vehiculoID = Objects.requireNonNull(vehiculoID);
         appendChange(new VehiculoRemoved(vehiculoID, tipoVehiculo)).apply();
     }
@@ -94,4 +96,7 @@ public class Pista extends AggregateEvent<PistaID> {
         return nombre;
     }
 
+    public void PisteroCreatedMessage(String message) {
+        appendChange(new PisteroCreatedMessage(message));
+    }
 }

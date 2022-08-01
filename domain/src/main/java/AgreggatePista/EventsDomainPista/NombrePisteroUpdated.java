@@ -16,4 +16,11 @@ public class NombrePisteroUpdated extends DomainEvent {
         this.nombre = nombre;
     }
 
+    public PisteroID getPisteroID() {
+        return pisteroID;
+    }
+
+    public Nombre getNombre() {
+        return nombre;
+    }
 }

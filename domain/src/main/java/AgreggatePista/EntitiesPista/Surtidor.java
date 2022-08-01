@@ -2,11 +2,14 @@ package AgreggatePista.EntitiesPista;
 
 import AgreggatePista.ValueObjetPista.Numero;
 import AgreggatePista.ValueObjetPista.SurtidorID;
+import AgreggatePista.ValueObjetPista.isLibre;
 import co.com.sofka.domain.generic.Entity;
 
 public class Surtidor extends Entity<SurtidorID> {
     public static SurtidorID surtidorID;
     public static Numero numero;
+    public static isLibre IsLibre;
+
     public Surtidor(SurtidorID surtidorID, Numero numero) {
         super(surtidorID);
         this.surtidorID = surtidorID;

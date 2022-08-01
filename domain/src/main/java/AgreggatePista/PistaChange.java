@@ -52,6 +52,22 @@ public class PistaChange extends EventChange {
             Pista.vehiculoID = null;
             Vehiculo.tipoVehiculo = null;
         });
+        apply((NombrePisteroUpdated event) -> {
+        Pistero.nombre = event.getNombre();
+
+        });
+        apply((NumeroSurtidorUpdated event) -> {
+            Surtidor.numero = event.getNumero();
+
+        });
+        apply((VehiculoisAtendidoUpdated event) -> {
+            Vehiculo.IsAtendido = event.getIsAtendido();
+
+        });
+        apply((SurtidorisLibreUpdated event) -> {
+            Surtidor.IsLibre =event.getIsLibre();
+
+        });
     }
 }
 

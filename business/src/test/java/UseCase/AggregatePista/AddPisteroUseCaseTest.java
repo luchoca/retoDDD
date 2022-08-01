@@ -1,6 +1,6 @@
 package UseCase.AggregatePista;
 
-import AgreggatePista.CommandsPista.AddPistero;
+import AgreggatePista.EventsDomainPista.CommandsPista.AddPistero;
 import AgreggatePista.EventsDomainPista.PistaCreated;
 import AgreggatePista.EventsDomainPista.PisteroAdded;
 import AgreggatePista.ValueObjetPista.Nombre;
@@ -35,7 +35,7 @@ class AddPisteroUseCaseTest {
     @Test
     void addPisteroToPistaSuccessfully() {
         PistaID pistaID = PistaID.of("fakePistaID");
-        Nombre nombre = new Nombre("Petrobras");
+        Nombre nombre = new Nombre("PisteroNombre");
         PisteroID pisteroID = PisteroID.of("fakePisteroID");
         var command = new AddPistero(nombre, pisteroID,pistaID);
 
@@ -48,7 +48,7 @@ class AddPisteroUseCaseTest {
                 .orElseThrow()
                 .getDomainEvents();
         var event = (PisteroAdded) events.get(0);
-        assertEquals("Petrobras", event.getNombre().value());
+        assertEquals("PisteroNombre", event.getNombre().value());
         Mockito.verify(repository).getEventsBy("fakePistaID");
     }
 

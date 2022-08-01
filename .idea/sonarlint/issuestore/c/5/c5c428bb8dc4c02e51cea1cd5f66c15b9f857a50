@@ -1,19 +1,27 @@
 
 l
-java:S1104"VMake surtidorID a static final constant or non-public and provide accessors if needed.(ìñí˜
+java:S1104	"VMake surtidorID a static final constant or non-public and provide accessors if needed.(ìñí˜
 m
-java:S1104	"RMake numero a static final constant or non-public and provide accessors if needed.(ïÇî‰þÿÿÿÿ
-M
-java:S1444"0Make this "public static surtidorID" field final(ìñí˜8©¥›•¥0
-N
-java:S1444	",Make this "public static numero" field final(ïÇî‰þÿÿÿÿ8©¥›•¥0
+java:S1104
+"RMake numero a static final constant or non-public and provide accessors if needed.(ïÇî‰þÿÿÿÿ
+u
+java:S1104"SMake IsLibre a static final constant or non-public and provide accessors if needed.(ÖÜÂ¢ùÿÿÿÿ8Èš¦¸¥0
+F
+java:S1444	"0Make this "public static surtidorID" field final(ìñí˜
+G
+java:S1444
+",Make this "public static numero" field final(ïÇî‰þÿÿÿÿ
+O
+java:S1444"-Make this "public static IsLibre" field final(ÖÜÂ¢ùÿÿÿÿ8Êš¦¸¥0
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(žƒâ¾øÿÿÿÿ
-D
-java:S3010"'Remove this assignment of "surtidorID".(†¢ƒÿ8°¥›•¥0
-E
-java:S3010"#Remove this assignment of "numero".(­Žùˆÿÿÿÿÿ8°¥›•¥0
-R
-java:S2209"5Change this instance-reference to a static reference.(†¢ƒÿ8°¥›•¥0
-W
-java:S2209"5Change this instance-reference to a static reference.(­Žùˆÿÿÿÿÿ8°¥›•¥0
-]	java:S125"<This block of commented-out lines of code should be removed.(Ç•È„ýÿÿÿÿ8¾ÿ••¥0
+t
+java:S3008"RRename this field "IsLibre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÜÂ¢ùÿÿÿÿ8Êš¦¸¥0
+=
+java:S3010"'Remove this assignment of "surtidorID".(†¢ƒÿ
+>
+java:S3010"#Remove this assignment of "numero".(­Žùˆÿÿÿÿÿ
+K
+java:S2209"5Change this instance-reference to a static reference.(†¢ƒÿ
+P
+java:S2209"5Change this instance-reference to a static reference.(­Žùˆÿÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Ç•È„ýÿÿÿÿ

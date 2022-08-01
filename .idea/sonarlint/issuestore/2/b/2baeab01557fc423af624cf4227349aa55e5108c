@@ -8,3 +8,11 @@ Q	java:S125 "<This block of commented-out lines of code should be removed.(ùÊ‹
 V	java:S125&"<This block of commented-out lines of code should be removed.(ò±ÃŠûÿÿÿÿ
 Q	java:S125,"<This block of commented-out lines of code should be removed.(©°‹›
 Q	java:S1252"<This block of commented-out lines of code should be removed.(è¾‹ê
+B
+java:S16027",Remove useless curly braces around statement(­“ã¨
+G
+java:S1602;",Remove useless curly braces around statement(¤‡‚Ùûÿÿÿÿ
+A
+java:S1602?",Remove useless curly braces around statement(Ğ‰øU
+B
+java:S1602C",Remove useless curly braces around statement(¦ı·ê

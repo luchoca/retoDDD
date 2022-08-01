@@ -1,6 +1,6 @@
 package UseCase.AggregatePista;
 
-import AgreggatePista.CommandsPista.UpdateVehiculoisAtendido;
+import AgreggatePista.EventsDomainPista.CommandsPista.UpdateVehiculoisAtendido;
 import AgreggatePista.Pista;
 import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;

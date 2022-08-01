@@ -7,7 +7,7 @@ public class PisteroID extends Identity {
     public PisteroID() {
     }
 
-    private PisteroID(String id) {
+    public PisteroID(String id) {
         super(id);
     }
 

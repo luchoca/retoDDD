@@ -1,6 +1,6 @@
 package UseCase.AggregatePista;
 
-import AgreggatePista.CommandsPista.AddSurtidor;
+import AgreggatePista.EventsDomainPista.CommandsPista.AddSurtidor;
 import AgreggatePista.EventsDomainPista.PistaCreated;
 import AgreggatePista.EventsDomainPista.SurtidorAdded;
 import AgreggatePista.ValueObjetPista.Nombre;

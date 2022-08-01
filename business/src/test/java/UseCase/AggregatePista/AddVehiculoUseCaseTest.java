@@ -1,6 +1,6 @@
 package UseCase.AggregatePista;
 
-import AgreggatePista.CommandsPista.AddVehiculo;
+import AgreggatePista.EventsDomainPista.CommandsPista.AddVehiculo;
 import AgreggatePista.EventsDomainPista.PistaCreated;
 import AgreggatePista.EventsDomainPista.VehiculoAdded;
 import AgreggatePista.ValueObjetPista.Nombre;
